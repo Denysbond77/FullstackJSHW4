@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Селектори</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Приклади використання CSS селекторів</h1>
+
+    <div>
+      <p>
+        Застосовується до тегів p, вкладених у div, на першому рівні, вага 2
+      </p>
+    </div>
+
+    <p>Теговий селектор p, вага 1</p>
+
+    <div class="example-class">
+      <p>Селектор класу .example-class, вага 10</p>
+    </div>
+
+    <div id="example-id">
+      <p>Селектор ID #example-id, вага 100</p>
+    </div>
+
+    <div>
+      <p title="example-attribute">
+        Селектор атрибуту [title="example-attribute"], вага 10
+      </p>
+    </div>
+
+    <section>
+      <div>
+        <p>Вкладений селектор section div p, вага 3</p>
+      </div>
+    </section>
+
+    <ul>
+      <li><a href="#">Дочірній селектор ul > li, вага 2</a></li>
+    </ul>
+
+    <div>
+      <p class="combined-class" id="combined-id" title="example">
+        Комбінація селекторів div p.combined-class#combined-id[title="example"],
+        вага 123
+      </p>
+    </div>
+  </body>
+</html>
